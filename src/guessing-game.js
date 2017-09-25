@@ -1,17 +1,20 @@
 var min, max, average;
 
 class GuessingGame {
-    constructor() {}
-
-    setRange(min, max) {
+    constructor() {
 		this.min=0
 		this.max=0
 		this.average=0
+	}
+
+    setRange(min, max) {
+		this.min=min
+		this.max=max	
 
     }
 
     guess() {
-		this.min=min
+		
 		this.average= Math.ceil(this.min + (this.max - this.min) / 2)
 		return this.average
 
